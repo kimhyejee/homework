@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>20200804_원페이지 쇼핑몰 연습</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .wrap {
+            margin: 20px auto;
+            width: 700px;
+        }
+
+        .itempic {
+            background-image: url('https://img.shangyexinzhi.com/image/article/bef7628819640d1e57acaf99d9f64b54.jpeg');
+            background-size: cover;
+            background-position: center;
+            width: 700px;
+            height: 370px;
+        }
+
+        .iteminfo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .order {
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.')
+        }
+
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="itempic"></div>
+    <div class="iteminfo">
+        <h1>Heytea - Cheese Mango</h1>
+        <h5>Price: 5,000KRW</h5>
+        <p>남녀노소 누구나 좋아하는 희차Heytea의 베스트셀러 망고 치즈티--치치망망. 한국까지 배송은 지원되지 않습니다. 원재료 원산지는 치즈부터 망고까지 모두 중국산이고 열량정보는 맛있으면
+            0칼로리입니다. </p>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">주문자명</span>
+        </div>
+        <input type="text" class="form-control" placeholder="성명을 기재해 주세요" aria-label="Username"
+               aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">수량</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>--수량을 선택하세요--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">주소</span>
+        </div>
+        <input type="text" class="form-control" placeholder="주소를 기재해 주세요" aria-label="Username"
+               aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">전화번호</span>
+        </div>
+        <input type="text" class="form-control" placeholder="전화번호를 기재해 주세요" aria-label="Username"
+               aria-describedby="basic-addon1">
+    </div>
+
+    <div class="order">
+        <button onclick="order()" class="btn btn-primary">주문하기</button>
+    </div>
+
+</body>
+
+</html>
